@@ -146,40 +146,40 @@ sBilibili.onclick =function () {
 
 //YingShi
 sYingshi.onclick = function () {
-    p='http://ifkdy.com/?q=';
-    n='&p=1';
-    s='http://ifkdy.com/';
+    p='https://www.dianyinggou.com/so/';
+    n='';
+    s='https://www.dianyinggou.com/';
     doAction(p,n,s);
 }
 
 //Wangpan
 sWangpan.onclick = function () {
-    p='http://www.panuso.com/s/';
+    p='https://www.xiaobaipan.com/list-';
     n='.html';
-    s='http://www.panuso.com'
+    s='https://www.xiaobaipan.com/'
     doAction(p,n,s);
 }
 
 //BT
 sBt.onclick = function () {
-    p='https://www.bturl.cc/search/';
-    n='_ctime_1.html';
-    s='https://www.bturl.cc'
+    p='https://www.btmet18.xyz/search.php?q=';
+    n='';
+    s='https://www.btmet18.xyz/'
     doAction(p,n,s);
 }
 
 //翻译
 sFanyi.onclick = function (){
-    p='https://fanyi.baidu.com/#auto/zh/';
+    p='https://translate.google.cn/?sl=auto&text=';
     n='';
-    s='https://fanyi.baidu.com/';
+    s='https://translate.google.cn/';
     doAction(p,n,s);
 }
 console.log("                                  ");
-console.log("   - 欢迎来到Morey的个人导航 -     ");
+console.log("   - 欢迎来到Sousou的个人导航 -     ");
 console.log("===============================");
 console.log("                          ");
-console.log("       老哥，你好啊~      ");
+console.log("       Hallo，你好啊~      ");
 console.log("                          ");
 console.log("===============================")
 
