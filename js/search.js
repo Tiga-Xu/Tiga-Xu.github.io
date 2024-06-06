@@ -13,7 +13,7 @@ const sYingshi = document.getElementById("yingshi");
 const sWangpan = document.getElementById("wangpan");
 const sBt = document.getElementById("bt");
 const sFanyi = document.getElementById("fanyi");
-
+const sAI = document.getElementById("AI");
 
 //isEmpty;
 let isEmpty =function (obj)  {
@@ -102,7 +102,7 @@ sGitHub.onclick= function () {
 
 //Gitee
 sGitee.onclick = function () {
-    p='https://gitee.com/search?utf8=✓&search=';
+    p='https://so.gitee.com/?q=';
     n='';
     s='https://gitee.com/'
     doAction(p,n,s);
@@ -140,39 +140,47 @@ sYouTube.onclick =function () {
 sBilibili.onclick =function () {
     p='https://search.bilibili.com/all?keyword=';
     n='';
-    s='https://search.bilibili.com'
+    s='https://search.bilibili.com/'
     doAction(p,n,s);
 }
 
 //YingShi
 sYingshi.onclick = function () {
-    p='https://www.dianyinggou.com/so/';
+    p='http://s.btwuji.com/plus/so.php?typeid=1&keyword=';
     n='';
-    s='https://www.dianyinggou.com/';
+    s='https://dytt.dytt8.net/';
     doAction(p,n,s);
 }
 
 //Wangpan
 sWangpan.onclick = function () {
-    p='https://www.xiaobaipan.com/list-';
-    n='.html';
-    s='https://www.xiaobaipan.com/'
+    p='https://www.dashengpan.com/#/main/search?keyword=';
+    n='&restype=3';
+    s='www.dashengpan.com/'
     doAction(p,n,s);
 }
 
 //BT
 sBt.onclick = function () {
-    p='https://www.btmet18.xyz/search.php?q=';
+    p='https://sh.btlm.one/';
     n='';
-    s='https://www.btmet18.xyz/'
+    s='https://so.btlm.pro/'//BT联盟
     doAction(p,n,s);
 }
 
 //翻译
 sFanyi.onclick = function (){
-    p='https://translate.google.cn/?sl=auto&text=';
+    p='https://www.deepl.com/zh/translator#zh/en/';//deepl
     n='';
-    s='https://translate.google.cn/';
+    s='https://fanyi.qq.com/';//腾讯翻译君
+    doAction(p,n,s);
+}
+
+//AI
+sAI.onclick = function (){
+    p='https://metaso.cn/?q=';
+    n='&';
+    s='https://metaso.cn/';
     doAction(p,n,s);
 }
 console.log("                                  ");
