@@ -8,17 +8,82 @@
     <link rel="shortcut icon" href="img/icon-black.png">
     <link rel="stylesheet" href="css/semantic.min.css">
     <link rel="stylesheet" href="css/m_dh.style.css">
+	
+
     <style type="text/css">
     body,td,th {
     font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
-}
-body {
-    background-color: #FFFFFF;
-}
-    </style>
+	}
+	body {
+	/* 加载背景图 */
+	background-image: url("img/icon-bg3.jfif");
+	/* 背景图垂直、水平均居中 */
+	background-position: center center;
+	/* 背景图不平铺 */
+	background-repeat: no-repeat;
+	/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+	background-attachment: fixed;
+	/* 让背景图基于容器大小伸缩 */
+	background-size: cover;
+	/* 设置背景颜色，背景图加载过程中会显示背景色 */
+	background-color: #ffffff;
+	}
+	</style>
+
 <title>飕飕丨个人导航</title>
     <script src="js/jquery.min.js"></script>
+<!--
+
+body {
+/* 加载背景图 */
+//background-image: url("img/icon-bg1.png");
+/* 背景图垂直、水平均居中 */
+background-position: center center;
+/* 背景图不平铺 */
+background-repeat: no-repeat;
+/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+background-attachment: fixed;
+/* 让背景图基于容器大小伸缩 */
+background-size: cover;
+/* 设置背景颜色，背景图加载过程中会显示背景色 */
+background-color: #ffffff;
+}
+-->	
+
 </head>
+	
+<!--	
+<script>
+var brightness;
+//显示遮罩
+function cover(brightness) {
+    if (typeof(div) == 'undefined') {
+        div = document.createElement('div');
+        div.setAttribute('style', 'position:fixed;top:0;left:0;outline:5000px solid;z-index:99999;');
+        document.body.appendChild(div);
+    } else {
+        div.style.display = '';
+    }
+    div.style.outlineColor = 'rgba(0,0,0,' + brightness + ')';
+}
+//事件监听
+window.addEventListener('keydown', function(e) {
+    if (e.altKey && e.keyCode == 90) { //Alt+Z:打开夜间模式
+        cover(brightness = 0.3);
+    }
+    if (e.altKey && e.keyCode == 88) { //Alt+X:关闭
+        cover(brightness = 0);
+    }
+    if (e.altKey && e.keyCode == 38) { //Alt+↑:增加亮度
+        if (brightness - 0.05 > 0.05) cover(brightness -= 0.05);
+    }
+    if (e.altKey && e.keyCode == 40) { //Alt+↓:降低亮度
+        if (brightness + 0.05 < 0.95) cover(brightness += 0.05);
+    }
+}, false);
+</script>	
+-->	
+	
 <body id="killie" >
 <!--使用了Semantic-UI进行美化-->
 
@@ -44,23 +109,54 @@ body {
 		<div class="light">执剑话江湖</div>
 		</a>
 		</span>
-        <a class="ui item right floated" id="goDonate">
-		<style>
-		.light{
-   			 	font-size: 15px;
-    			color: #FDFDFD;
-    			text-shadow: 0 0 0.5em #FC2525, 0 0 0.2em #DD7375;
-			} 
-		</style>
-		<div class="light"> 赞一个</div>
-           
-            </a>
-
-        </div>
-</div>
+		
+	<body>
+	<style>
+	.light1{
+			margin:10px auto;
+    		//border: 5px double green;
+    		width: 400px;
+    		height: 50px;
+    		line-height: 50px;
+    		text-align: center;
+    		font: bold;
+   			font-size: 15px;
+    		color: #FDFDFD;
+    		text-shadow: 0 0 0.5em #FC2525, 0 0 0.2em #DD7375;
+	} 
+	</style>
+    <div id="times" class="light1">
+    </div>
+    <script type="text/javascript">
+        function getD1() {
+            //当前时间
+            var date = new Date();
+            //格式化
+            var d1 = date.toLocaleString();
+            //获取div
+            var div1 = document.getElementById("times");
+            div1.innerHTML = d1;
+        }
+        //使用定时器实现每一秒写一次时间
+        setInterval("getD1();",1000);   
+    </script>
+ 	</body>
+				
+    <a class="ui item right floated" id="goDonate">
+	<style>
+	.light{
+   			font-size: 15px;
+    		color: #FDFDFD;
+    		text-shadow: 0 0 0.5em #FC2525, 0 0 0.2em #DD7375;
+	} 
+	</style>
+	<div class="light"> 赞一个</div>
+    </a>
+	</div>
+	</div>
 
 <div class="ui main container">
-    <img src="img/zhijianhuajianghu2.png" height="100" class="centerlog">
+    <img src="img/zhijianhuajianghu3.png" height="100" class="centerlog" >
     <div class="ui search">
         <div class="ui input">
             <input id="search" name="wd" class="prompt" placeholder="" type="text" autofocus="autofocus">

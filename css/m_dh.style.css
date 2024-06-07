@@ -30,7 +30,7 @@ body {
     height: 7em;
 }
 .centerlog {
-    display: block;
+    display:block;
     margin: auto;
     height: 10rem;
 }
@@ -67,4 +67,8 @@ body {
 .ui.stables{
     padding-top: 2em;
 
+}
+
+.centerlog {
+	
 }
