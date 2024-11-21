@@ -133,6 +133,8 @@ sTaoBao.onclick =function () {
 //YouTube
 sYouTube.onclick =function () {
     p='https://www.youtube.com/results?search_query=';
+    n='';
+    s='https://www.youtube.com/'
     doAction(p,n,p);
 }
 
@@ -164,7 +166,7 @@ sWangpan.onclick = function () {
 syuque.onclick = function () {
     p='https://www.yuque.com/search?q=';
     n='';
-    s='www.yuque.com/'//语雀
+    s='https://www.yuque.com/dashboard'//语雀
     doAction(p,n,s);
 }
 
