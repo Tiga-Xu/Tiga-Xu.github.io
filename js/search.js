@@ -11,10 +11,10 @@ const sYouTube = document.getElementById('youtube')
 const sBilibili = document.getElementById("bilibili");
 const sYingshi = document.getElementById("yingshi");
 const sWangpan = document.getElementById("wangpan");
-const sBt = document.getElementById("bt");
+const syuque = document.getElementById("yuque");
 const sFanyi = document.getElementById("fanyi");
 const sAI = document.getElementById("AI");
-
+const sBt = document.getElementById("bt");
 //isEmpty;
 let isEmpty =function (obj)  {
     if (obj === null) return true;
@@ -160,11 +160,11 @@ sWangpan.onclick = function () {
     doAction(p,n,s);
 }
 
-//BT
-sBt.onclick = function () {
-    p='https://sh.btlm.one/';
+//语雀
+syuque.onclick = function () {
+    p='https://www.yuque.com/search?q=';
     n='';
-    s='https://so.btlm.pro/'//BT联盟
+    s='www.yuque.com/'//语雀
     doAction(p,n,s);
 }
 
@@ -181,6 +181,14 @@ sAI.onclick = function (){
     p='https://metaso.cn/?q=';
     n='&';
     s='https://metaso.cn/';
+    doAction(p,n,s);
+}
+
+//BT
+sBt.onclick = function () {
+    p='https://sh.btlm.one/';
+    n='';
+    s='https://so.btlm.pro/'//BT联盟
     doAction(p,n,s);
 }
 console.log("                                  ");
