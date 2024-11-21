@@ -165,7 +165,7 @@ sWangpan.onclick = function () {
 //语雀
 syuque.onclick = function () {
     p='https://www.yuque.com/search?q=';
-    n='';
+    n='&type=content&scope=%2F&tab=public&p=1&sence=modal';
     s='https://www.yuque.com/dashboard'//语雀
     doAction(p,n,s);
 }
